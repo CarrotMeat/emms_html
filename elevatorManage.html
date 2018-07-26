@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <!-- Font-icon css-->
+    <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+    <title>电梯维保管理系统</title>
+</head>
+<body class="sidebar-mini fixed">
+    <div class="wrapper">
+        <!-- Navbar-->
+        <header class="main-header hidden-print"><a class="logo" href="#">电梯维保管理系统</a>
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
+                <div class="navbar-custom-menu">
+                    <ul class="top-nav">
+                        <li><span>宁波特种设备检验研究院</span></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i></a>
+                            <ul class="dropdown-menu settings-menu">
+                                <li><a href="#"><i class="fa fa-cog fa-lg"></i>修改密码</a></li>
+                                <li><a href="#"><i class="fa fa-sign-out fa-lg"></i>注销</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Side-Nav-->
+        <aside class="main-sidebar hidden-print">
+            <section class="sidebar">
+                <div class="user-panel">
+                    <div class="image">
+                        <img class="img-circle" src="static/image/logo.png" alt="User Image">
+                    </div>
+                </div>
+                <!-- Sidebar Menu-->
+                <ul class="sidebar-menu">
+                    <li><a href="base.html"><i class="fa fa-home fa-fw fa-lg"></i><span>首页</span></a></li>
+                    <li><a href="elevatorManage.html"><i class="fa fa-cog fa-fw fa-lg"></i><span>电梯</span></a></li>
+                    <li><a href="#"><i class="fa fa-address-book-o fa-fw fa-lg"></i><span>人员</span></a></li>
+                    <li><a href="#"><i class="fa fa-file-text-o fa-fw fa-lg"></i><span>报告</span></a></li>
+                    <li class="treeview"><a href="#"><i class="fa fa-user-o fa-fw fa-lg"></i><span>用户</span></a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-user-plus"></i> 添加用户</a></li>
+                            <li><a href="#"><i class="fa fa-users"></i> 用户管理</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <div class="content-wrapper">
+            <div class="page-title">
+                <div class="div">
+                    <ul class="breadcrumb">
+                        <li><i class="fa fa-home fa-lg"></i></li>
+                        <li>Bootstrap Elements</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="control-label col-md-1 col-md-offset-1" for="ein">识别码</label>
+                                    <div class="col-md-2">
+                                        <input id="ein" class="form-control" type="text" name="ein" placeholder="识别码">
+                                    </div>
+                                    <label class="control-label col-md-1" for="ein">注册代码</label>
+                                    <div class="col-md-2">
+                                        <input id="registration_code" class="form-control" type="text" name="registration_code" placeholder="注册代码">
+                                    </div>
+                                    <label class="control-label col-md-1" for="ein">出厂编号</label>
+                                    <div class="col-md-2">
+                                        <input id="manufacturing_code" class="form-control" type="text" name="manufacturing_code" placeholder="出厂编号">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-1 col-md-offset-1" for="use_unit">使用单位</label>
+                                    <div class="col-md-2">
+                                        <input id="use_unit" class="form-control" type="text" name="use_unit" placeholder="使用单位">
+                                    </div>
+                                    <label class="control-label col-md-1" for="manufacturing_unit">制造单位</label>
+                                    <div class="col-md-2">
+                                        <input id="manufacturing_unit" class="form-control" type="text" name="manufacturing_unit" placeholder="制造单位">
+                                    </div>
+                                    <label class="control-label col-md-1" for="construction_unit">施工单位</label>
+                                    <div class="col-md-2">
+                                        <input id="construction_unit" class="form-control" type="text" name="construction_unit" placeholder="施工单位">
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="row">
+                                        <div class="col-md-2 col-md-offset-4" >
+                                            <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>查询</button>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-refresh"></i>重置</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <h2>表格</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Javascripts-->
+    <script src="static/js/jquery-2.1.4.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/pace.min.js"></script>
+    <script src="static/js/main.js"></script>
+</body>
+</html>
