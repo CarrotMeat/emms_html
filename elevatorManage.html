@@ -55,6 +55,7 @@
             </section>
         </aside>
         <div class="content-wrapper">
+            <!--页面标题显示-->
             <div class="page-title">
                 <div class="div">
                     <ul class="breadcrumb">
@@ -63,6 +64,7 @@
                     </ul>
                 </div>
             </div>
+            <!--查询条件-->
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
@@ -110,41 +112,30 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <!--查询结果显示表格-->
+            <div class="row">
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-body">
                             <div id="sampleTable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                                <!--<div class="row">-->
-                                    <!--<div class="col-sm-6">-->
-                                        <!--<div class="dataTables_length" id="sampleTable_length">-->
-                                            <!--<label>Show <select name="sampleTable_length" aria-controls="sampleTable" class="form-control input-sm">-->
-                                                <!--<option value="10">10</option>-->
-                                                <!--<option value="25">25</option>-->
-                                                <!--<option value="50">50</option>-->
-                                                <!--<option value="100">100</option>-->
-                                            <!--</select> entries</label>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                    <!--<div class="col-sm-6">-->
-                                        <!--<div id="sampleTable_filter" class="dataTables_filter">-->
-                                            <!--<label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="sampleTable"></label>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
                                 <div class="row">
-                                    <table class="table table-hover table-bordered dataTable no-footer" id="sampleTable" role="grid" aria-describedby="sampleTable_info">
-                                        <thead>
-                                            <tr class="row">
-                                                <th class="sorting_asc" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 158px;">Name</th>
-                                                <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 263px;">Position</th>
-                                                <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 108px;">Office</th>
-                                                <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 54px;">Age</th>
-                                                <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 110px;">Start date</th>
-                                                <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 90px;">Salary</th>
+                                    <div class="col-sm-12">
+                                        <table class="table table-hover table-bordered dataTable no-footer" id="sampleTable" role="grid" aria-describedby="sampleTable_info">
+                                            <thead>
+                                            <tr role="row">
+                                                <th class="sorting_asc" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="id: activate to sort column descending">id</th>
+                                                <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">Name</th>
+                                                <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending">Position</th>
+                                                <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending">Office</th>
+                                                <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending">Age</th>
+                                                <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending">Start date</th>
+                                                <th class="sorting" tabindex="0" aria-controls="sampleTable" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending">Salary</th>
                                             </tr>
-                                        </thead>
-                                        <tbody>
+                                            </thead>
+                                            <tbody>
                                             <tr role="row" class="odd">
+                                                <td>1</td>
                                                 <td class="sorting_1">Airi Satou</td>
                                                 <td>Accountant</td>
                                                 <td>Tokyo</td>
@@ -153,6 +144,7 @@
                                                 <td>$162,700</td>
                                             </tr>
                                             <tr role="row" class="even">
+                                                <td>2</td>
                                                 <td class="sorting_1">Angelica Ramos</td>
                                                 <td>Chief Executive Officer (CEO)</td>
                                                 <td>London</td>
@@ -161,6 +153,7 @@
                                                 <td>$1,200,000</td>
                                             </tr>
                                             <tr role="row" class="odd">
+                                                <td>3</td>
                                                 <td class="sorting_1">Ashton Cox</td>
                                                 <td>Junior Technical Author</td>
                                                 <td>San Francisco</td>
@@ -169,6 +162,7 @@
                                                 <td>$86,000</td>
                                             </tr>
                                             <tr role="row" class="even">
+                                                <td>4</td>
                                                 <td class="sorting_1">Bradley Greer</td>
                                                 <td>Software Engineer</td>
                                                 <td>London</td>
@@ -177,6 +171,7 @@
                                                 <td>$132,000</td>
                                             </tr>
                                             <tr>
+                                                <td>5</td>
                                                 <td>Tiger Nixon</td>
                                                 <td>System Architect</td>
                                                 <td>Edinburgh</td>
@@ -185,6 +180,7 @@
                                                 <td>$320,800</td>
                                             </tr>
                                             <tr>
+                                                <td>6</td>
                                                 <td>Garrett Winters</td>
                                                 <td>Accountant</td>
                                                 <td>Tokyo</td>
@@ -193,6 +189,7 @@
                                                 <td>$170,750</td>
                                             </tr>
                                             <tr>
+                                                <td>7</td>
                                                 <td>Ashton Cox</td>
                                                 <td>Junior Technical Author</td>
                                                 <td>San Francisco</td>
@@ -201,6 +198,7 @@
                                                 <td>$86,000</td>
                                             </tr>
                                             <tr>
+                                                <td>8</td>
                                                 <td>Cedric Kelly</td>
                                                 <td>Senior Javascript Developer</td>
                                                 <td>Edinburgh</td>
@@ -209,6 +207,7 @@
                                                 <td>$433,060</td>
                                             </tr>
                                             <tr>
+                                                <td>9</td>
                                                 <td>Airi Satou</td>
                                                 <td>Accountant</td>
                                                 <td>Tokyo</td>
@@ -217,6 +216,7 @@
                                                 <td>$162,700</td>
                                             </tr>
                                             <tr>
+                                                <td>10</td>
                                                 <td>Brielle Williamson</td>
                                                 <td>Integration Specialist</td>
                                                 <td>New York</td>
@@ -225,6 +225,7 @@
                                                 <td>$372,000</td>
                                             </tr>
                                             <tr>
+                                                <td>11</td>
                                                 <td>Herrod Chandler</td>
                                                 <td>Sales Assistant</td>
                                                 <td>San Francisco</td>
@@ -233,6 +234,7 @@
                                                 <td>$137,500</td>
                                             </tr>
                                             <tr>
+                                                <td>12</td>
                                                 <td>Rhona Davidson</td>
                                                 <td>Integration Specialist</td>
                                                 <td>Tokyo</td>
@@ -241,6 +243,7 @@
                                                 <td>$327,900</td>
                                             </tr>
                                             <tr>
+                                                <td>13</td>
                                                 <td>Colleen Hurst</td>
                                                 <td>Javascript Developer</td>
                                                 <td>San Francisco</td>
@@ -249,6 +252,7 @@
                                                 <td>$205,500</td>
                                             </tr>
                                             <tr>
+                                                <td>14</td>
                                                 <td>Sonya Frost</td>
                                                 <td>Software Engineer</td>
                                                 <td>Edinburgh</td>
@@ -257,6 +261,7 @@
                                                 <td>$103,600</td>
                                             </tr>
                                             <tr>
+                                                <td>15</td>
                                                 <td>Jena Gaines</td>
                                                 <td>Office Manager</td>
                                                 <td>London</td>
@@ -265,6 +270,7 @@
                                                 <td>$90,560</td>
                                             </tr>
                                             <tr>
+                                                <td>16</td>
                                                 <td>Quinn Flynn</td>
                                                 <td>Support Lead</td>
                                                 <td>Edinburgh</td>
@@ -273,6 +279,7 @@
                                                 <td>$342,000</td>
                                             </tr>
                                             <tr>
+                                                <td>17</td>
                                                 <td>Charde Marshall</td>
                                                 <td>Regional Director</td>
                                                 <td>San Francisco</td>
@@ -281,6 +288,7 @@
                                                 <td>$470,600</td>
                                             </tr>
                                             <tr>
+                                                <td>18</td>
                                                 <td>Haley Kennedy</td>
                                                 <td>Senior Marketing Designer</td>
                                                 <td>London</td>
@@ -289,6 +297,7 @@
                                                 <td>$313,500</td>
                                             </tr>
                                             <tr>
+                                                <td>19</td>
                                                 <td>Tatyana Fitzpatrick</td>
                                                 <td>Regional Director</td>
                                                 <td>London</td>
@@ -296,47 +305,11 @@
                                                 <td>2010/03/17</td>
                                                 <td>$385,750</td>
                                             </tr>
-                                        </tbody>
-                                    </table>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                                <!--<div class="row">-->
-                                    <!--<div class="col-sm-5">-->
-                                        <!--<div class="dataTables_info" id="sampleTable_info" role="status" aria-live="polite">-->
-                                            <!--Showing 1 to 10 of 57 entries-->
-                                        <!--</div>-->
-                                        <!--<div class="col-sm-7">-->
-                                            <!--<div class="dataTables_paginate paging_simple_numbers" id="sampleTable_paginate">-->
-                                                <!--<ul class="pagination">-->
-                                                    <!--<li class="paginate_button previous disabled" id="sampleTable_previous">-->
-                                                        <!--<a href="#" aria-controls="sampleTable" data-dt-idx="0" tabindex="0">Previous</a>-->
-                                                    <!--</li>-->
-                                                    <!--<li class="paginate_button active">-->
-                                                        <!--<a href="#" aria-controls="sampleTable" data-dt-idx="1" tabindex="0">1</a>-->
-                                                    <!--</li>-->
-                                                    <!--<li class="paginate_button ">-->
-                                                        <!--<a href="#" aria-controls="sampleTable" data-dt-idx="2" tabindex="0">2</a>-->
-                                                    <!--</li>-->
-                                                    <!--<li class="paginate_button ">-->
-                                                        <!--<a href="#" aria-controls="sampleTable" data-dt-idx="3" tabindex="0">3</a>-->
-                                                    <!--</li>-->
-                                                    <!--<li class="paginate_button ">-->
-                                                        <!--<a href="#" aria-controls="sampleTable" data-dt-idx="4" tabindex="0">4</a>-->
-                                                    <!--</li>-->
-                                                    <!--<li class="paginate_button ">-->
-                                                        <!--<a href="#" aria-controls="sampleTable" data-dt-idx="5" tabindex="0">5</a>-->
-                                                    <!--</li>-->
-                                                    <!--<li class="paginate_button ">-->
-                                                        <!--<a href="#" aria-controls="sampleTable" data-dt-idx="6" tabindex="0">6</a>-->
-                                                    <!--</li>-->
-                                                    <!--<li class="paginate_button next" id="sampleTable_next">-->
-                                                        <!--<a href="#" aria-controls="sampleTable" data-dt-idx="7" tabindex="0">Next</a>-->
-                                                    <!--</li>-->
-                                                <!--</ul>-->
-                                            <!--</div>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -346,10 +319,11 @@
     <!-- Javascripts-->
     <script src="static/js/jquery-2.1.4.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/pace.min.js"></script>
     <script src="static/js/main.js"></script>
     <script type="text/javascript" src="static/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="static/js/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript">$('#sampleTable').DataTable();</script>
+    <script type="text/javascript">
+        $('#sampleTable').DataTable();
+    </script>
 </body>
 </html>
