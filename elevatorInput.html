@@ -21,7 +21,8 @@
                     <ul class="top-nav">
                         <li><span>宁波特种设备检验研究院</span></li>
                         <li class="dropdown">
-                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i></a>
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
+                               aria-expanded="false"><i class="fa fa-user fa-lg"></i></a>
                             <ul class="dropdown-menu settings-menu">
                                 <li><a href="#"><i class="fa fa-cog fa-lg"></i>修改密码</a></li>
                                 <li><a href="#"><i class="fa fa-sign-out fa-lg"></i>注销</a></li>
@@ -68,108 +69,50 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
-                        <div class="card-body">
-                            <form class="form-horizontal">
-                                <div class="form-group">
-                                    <label class="control-label col-md-1 col-md-offset-1" for="ein">识别码</label>
-                                    <div class="col-md-2">
-                                        <input id="ein" class="form-control" type="text" name="ein" placeholder="识别码">
-                                    </div>
-                                    <label class="control-label col-md-1" for="ein">注册代码</label>
-                                    <div class="col-md-2">
-                                        <input id="registration_code" class="form-control" type="text" name="registration_code" placeholder="注册代码">
-                                    </div>
-                                    <label class="control-label col-md-1" for="ein">出厂编号</label>
-                                    <div class="col-md-2">
-                                        <input id="manufacturing_code" class="form-control" type="text" name="manufacturing_code" placeholder="出厂编号">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="control-label col-md-1 col-md-offset-1" for="use_unit">使用单位</label>
-                                    <div class="col-md-2">
-                                        <input id="use_unit" class="form-control" type="text" name="use_unit" placeholder="使用单位">
-                                    </div>
-                                    <label class="control-label col-md-1" for="manufacturing_unit">制造单位</label>
-                                    <div class="col-md-2">
-                                        <input id="manufacturing_unit" class="form-control" type="text" name="manufacturing_unit" placeholder="制造单位">
-                                    </div>
-                                    <label class="control-label col-md-1" for="construction_unit">施工单位</label>
-                                    <div class="col-md-2">
-                                        <input id="construction_unit" class="form-control" type="text" name="construction_unit" placeholder="施工单位">
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="row">
-                                        <div class="col-md-2 col-md-offset-4" >
-                                            <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>查询</button>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-refresh"></i>重置</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                        <div class="card-title">
+                            <h3>电梯信息录入</h3>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!--查询结果显示表格-->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <table class="table table-hover table-bordered" id="sampleTable">
-                                <thead>
-                                <tr>
-                                    <th>选择</th>
-                                    <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Office</th>
-                                    <th>Age</th>
-                                    <th>Start date</th>
-                                    <th>Salary</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Tiger Nixon</td>
-                                    <td>System Architect</td>
-                                    <td>Edinburgh</td>
-                                    <td>61</td>
-                                    <td>2011/04/25</td>
-                                    <td>$320,800</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Shad Decker</td>
-                                    <td>Regional Director</td>
-                                    <td>Edinburgh</td>
-                                    <td>51</td>
-                                    <td>2008/11/13</td>
-                                    <td>$183,000</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Michael Bruce</td>
-                                    <td>Javascript Developer</td>
-                                    <td>Singapore</td>
-                                    <td>29</td>
-                                    <td>2011/06/27</td>
-                                    <td>$183,000</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="checkbox"></td>
-                                    <td>Donna Snider</td>
-                                    <td>Customer Support</td>
-                                    <td>New York</td>
-                                    <td>27</td>
-                                    <td>2011/01/25</td>
-                                    <td>$112,000</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <form class="form-horizontal">
+                            <div class="card-body">
+                                <table class="table table-hover table-bordered" id="sampleTable">
+                                    <thead>
+                                        <tr>
+                                            <th>选择</th>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td colspan="2">Tiger Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <div class="row">
+                                    <div class="col-md-1 col-md-offset-5">
+                                        <button class="btn btn-primary icon-btn" type="button"><i
+                                                class="fa fa-fw fa-lg fa-check-circle"></i>查询
+                                        </button>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <button class="btn btn-primary icon-btn" type="button"><i
+                                                class="fa fa-fw fa-lg fa-refresh"></i>重置
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -181,8 +124,8 @@
     <script src="static/js/main.js"></script>
     <script type="text/javascript" src="static/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="static/js/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $('#sampleTable').DataTable();
-    </script>
+    <!--<script type="text/javascript">-->
+        <!--$('#sampleTable').DataTable();-->
+    <!--</script>-->
 </body>
 </html>
