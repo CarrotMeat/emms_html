@@ -70,49 +70,133 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-title">
-                            <h3>电梯信息录入</h3>
+                            <h3>电梯基础信息录入</h3>
                         </div>
-                        <form class="form-horizontal">
-                            <div class="card-body">
-                                <table class="table table-hover table-bordered" id="sampleTable">
-                                    <thead>
-                                        <tr>
-                                            <th>选择</th>
-                                            <th>Name</th>
-                                            <th>Position</th>
-                                            <th>Office</th>
-                                            <th>Age</th>
-                                            <th>Start date</th>
-                                            <th>Salary</th>
-                                        </tr>
-                                    </thead>
+                        <div class="card-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="control-label col-md-1" for="sydw">使用单位</label>
+                                    <div class="col-md-3">
+                                        <input id="sydw" class="form-control" type="text" name="sydw" placeholder="使用单位">
+                                    </div>
+                                    <label class="control-label col-md-2" for="sydwdm">使用单位代码</label>
+                                    <div class="col-md-2">
+                                        <input id="sydwdm" class="form-control" type="text" name="sydwdm" placeholder="使用单位代码">
+                                    </div>
+                                    <label class="control-label col-md-1" for="sbm">识别码</label>
+                                    <div class="col-md-2">
+                                        <input id="sbm" class="form-control" type="text" name="sbm" placeholder="识别码">
+                                    </div>
+                                </div>
+                                <table class="table table-hover table-bordered" id="table_sb">
                                     <tbody>
                                         <tr>
-                                            <td><input type="checkbox"></td>
-                                            <td colspan="2">Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                            <td>Edinburgh</td>
-                                            <td>61</td>
-                                            <td>2011/04/25</td>
+                                            <td>使用地点</td>
+                                            <td><label for="sydd"></label><input type="text" id="sydd" required></td>
+                                            <td>使用编号</td>
+                                            <td><label for="sybh"></label><input type="text" id="sybh" required></td>
+                                            <td>设备名称</td>
+                                            <td>
+                                                <label for="sbmc"></label>
+                                                <select id="sbmc" name="sbmc">
+                                                    <option value="ele_room">曳引驱动乘客电梯</option>
+                                                    <option value="ele_no_room">曳引驱动乘客电梯(无机房)</option>
+                                                    <option value="escalator">自动扶梯</option>
+                                                    <option value="passenger_conveyor">自动人行道</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>型号</td>
+                                            <td><label for="xh"></label><input type="text" id="xh" required></td>
+                                            <td>出厂编号</td>
+                                            <td><label for="ccbh"></label><input type="text" id="ccbh" required></td>
+                                            <td>注册代码</td>
+                                            <td><label for="zcdm"></label><input type="text" id="zcdm" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>制造单位</td>
+                                            <td colspan="3"><label for="zzdw"></label><input type="text" id="zzdw" required style="width: 600px"></td>
+                                            <td>制造日期</td>
+                                            <td><label for="zzrq"></label><input type="date" id="zzrq" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>安装单位</td>
+                                            <td colspan="3"><label for="azdw"></label><input type="text" id="azdw" required style="width: 600px"></td>
+                                            <td>安装日期</td>
+                                            <td><label for="azrq"></label><input type="date" id="azrq" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>改造单位</td>
+                                            <td colspan="3"><label for="gzdw"></label><input type="text" id="gzdw" required style="width: 600px"></td>
+                                            <td>改造日期</td>
+                                            <td><label for="gzrq"></label><input type="date" id="gzrq" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>重大修理单位</td>
+                                            <td colspan="3"><label for="zdxldw"></label><input type="text" id="zdxldw" required style="width: 600px"></td>
+                                            <td>重大修理日期</td>
+                                            <td><label for="zdxlrq"></label><input type="date" id="zdxlrq" required></td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
-                            <div class="card-footer">
-                                <div class="row">
-                                    <div class="col-md-1 col-md-offset-5">
-                                        <button class="btn btn-primary icon-btn" type="button"><i
-                                                class="fa fa-fw fa-lg fa-check-circle"></i>查询
-                                        </button>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <button class="btn btn-primary icon-btn" type="button"><i
-                                                class="fa fa-fw fa-lg fa-refresh"></i>重置
-                                        </button>
-                                    </div>
+                                <table class="table table-hover table-bordered" id="table_ry" style="margin-top: 30px">
+                                    <tbody>
+                                        <tr>
+                                            <td>联系人</td>
+                                            <td><label for="lxr"></label><input type="text" id="lxr" required></td>
+                                            <td>联系号码</td>
+                                            <td><label for="lxhm"></label><input type="tel" id="lxhm" required></td>
+                                            <td>电梯司机</td>
+                                            <td><label for="dtsj"></label><input type="text" id="dtsj" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>安全管理人员</td>
+                                            <td><label for="aqglry"></label><input type="text" id="aqglry" required></td>
+                                            <td>安全管理人员证号</td>
+                                            <td><label for="aqglryzh"></label><input type="text" id="aqglryzh" required></td>
+                                            <td>电梯司机证号</td>
+                                            <td><label for="dtsjzh"></label><input type="text" id="dtsjzh" required></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-hover table-bordered" id="table_ht" style="margin-top: 30px">
+                                    <tbody>
+                                        <tr>
+
+                                            <td>维保合同编号</td>
+                                            <td><label for="wbhtbh"></label><input type="text" id="wbhtbh" required></td>
+                                            <td>维保等级</td>
+                                            <td><label for="wbdj"></label><input type="text" id="wbdj" required></td>
+                                            <td>维保人员A</td>
+                                            <td><label for="wbry_a"></label><input type="text" id="wbry_a" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>维保开始日期</td>
+                                            <td><label for="wbksrq"></label><input type="date" id="wbksrq" required></td>
+                                            <td>维保结束日期</td>
+                                            <td><label for="wbjsrq"></label><input type="date" id="wbjsrq" required></td>
+                                            <td>维保人员B</td>
+                                            <td><label for="wbry_b"></label><input type="text" id="wbry_b" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td>维保备注</td>
+                                            <td colspan="5"><label for="wbbz"></label><input type="" id="wbbz" style="width: 750px"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-md-2 col-md-offset-4" >
+                                    <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>提交</button>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-refresh"></i>重置</button>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
