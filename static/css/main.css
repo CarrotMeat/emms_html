@@ -14538,7 +14538,11 @@ be a descendant of the grid when it is being dragged.
   padding: 20px 0 0 0;
   margin-top: 10px;
 }
-
+.card-diver {
+  border-top: 3px solid #ddd;
+  padding: 20px 0 0 0;
+  margin-top: 20px;
+}
 /* Custom Checkbox and Radio Buttons */
 .animated-checkbox input[type="checkbox"] {
   display: none;
