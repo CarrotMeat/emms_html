@@ -71,76 +71,142 @@
                     <div class="card">
                         <div class="card-title">
                             <div style="margin-bottom: 30px; border-bottom: #2b333e; border-bottom-style: solid">
-                                <h3>电梯基础信息录入</h3>
+                                <h3>电梯设备信息录入</h3>
                             </div>
                         </div>
                         <div class="card-body">
                             <form class="form-horizontal">
                                 <div class="form-group" style="margin-left: 15px">
-                                    <label class="control-label col-md-1" for="sydw">使用单位</label>
-                                    <div class="col-md-3">
-                                        <input id="sydw" class="form-control" type="text" name="sydw" placeholder="使用单位">
-                                    </div>
-                                    <label class="control-label col-md-2" for="sydwdm">使用单位代码</label>
+                                    <label class="control-label col-md-1" for="edsd">额定速度</label>
                                     <div class="col-md-2">
-                                        <input id="sydwdm" class="form-control" type="text" name="sydwdm" placeholder="使用单位代码">
+                                        <input id="edsd" class="form-control" type="text" name="edsd" placeholder="额定速度(m/s)">
                                     </div>
-                                    <label class="control-label col-md-1" for="sbm">识别码</label>
+                                    <label class="control-label col-md-2" for="edzzl">额定载重量</label>
                                     <div class="col-md-2">
-                                        <input id="sbm" class="form-control" type="text" name="sbm" placeholder="识别码">
+                                        <input id="edzzl" class="form-control" type="text" name="edzzl" placeholder="额定载重量(kg)">
+                                    </div>
+                                    <label class="control-label col-md-1" for="czm_c">层站门</label>
+                                    <div class="col-md-1">
+                                        <input id="czm_c" class="form-control" type="text" name="czm_c" placeholder="层">
+                                    </div>
+                                    <label class="sr-only" for="czm_c">站</label>
+                                    <div class="col-md-1">
+                                        <input id="czm_z" class="form-control" type="text" name="czm_z" placeholder="站">
+                                    </div>
+                                    <label class="sr-only" for="czm_c">门</label>
+                                    <div class="col-md-1">
+                                        <input id="czm_m" class="form-control" type="text" name="czm_m" placeholder="门">
                                     </div>
                                 </div>
                                 <div class="form-group" style="margin-left: 15px">
-                                    <label class="control-label col-md-1" for="sydd">使用地点</label>
-                                    <div class="col-md-3">
-                                        <input id="sydd" class="form-control" type="text" name="sydd" placeholder="使用地点">
-                                    </div>
-                                    <label class="control-label col-md-2" for="sybh">使用编号</label>
+                                    <label class="control-label col-md-1" for="kzfs">控制方式</label>
                                     <div class="col-md-2">
-                                        <input id="sybh" class="form-control" type="text" name="sybh" placeholder="使用编号">
+                                        <select id="kzfs" name="kzfs" class="form-control">
+                                            <option value="xh">信号</option>
+                                            <option value="jx">集选</option>
+                                            <option value="qk">群控</option>
+                                            <option value="an">按钮</option>
+                                        </select>
                                     </div>
-                                    <label class="control-label col-md-1" for="sbmc">设备名称</label>
+                                    <label class="control-label col-md-2" for="jxzx">轿厢装修</label>
                                     <div class="col-md-2">
-                                        <select id="sbmc" name="sbmc" class="form-control">
-                                            <option value="ele_room">曳引驱动乘客电梯</option>
-                                            <option value="ele_no_room">曳引驱动乘客电梯(无机房)</option>
-                                            <option value="escalator">自动扶梯</option>
-                                            <option value="passenger_conveyor">自动人行道</option>
+                                        <select id="jxzx" name="jxzx" class="form-control">
+                                            <option value="you">有</option>
+                                            <option value="wu">无</option>
+                                        </select>
+                                    </div>
+                                    <label class="control-label col-md-2" for="ic_card">IC卡</label>
+                                    <div class="col-md-2">
+                                        <select id="ic_card" name="ic_card" class="form-control">
+                                            <option value="you">有</option>
+                                            <option value="wu">无</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group" style="margin-left: 15px">
-                                    <label class="control-label col-md-1" for="xh">型号</label>
-                                    <div class="col-md-3">
-                                        <input id="xh" class="form-control" type="text" name="xh" placeholder="型号">
-                                    </div>
-                                    <label class="control-label col-md-2" for="ccbh">出厂编号</label>
+                                    <label class="control-label col-md-1" for="zdjy">自动救援</label>
                                     <div class="col-md-2">
-                                        <input id="ccbh" class="form-control" type="text" name="ccbh" placeholder="出厂编号">
+                                        <select id="zdjy" name="zdjy" class="form-control">
+                                            <option value="you">有</option>
+                                            <option value="wu">无</option>
+                                        </select>
                                     </div>
-                                    <label class="control-label col-md-1" for="zcdm">注册代码</label>
+                                    <label class="control-label col-md-2" for="nlfk">能量反馈</label>
                                     <div class="col-md-2">
-                                        <input id="zcdm" class="form-control" type="text" name="zcdm" placeholder="注册代码">
+                                        <select id="nlfk" name="nlfk" class="form-control">
+                                            <option value="you">有</option>
+                                            <option value="wu">无</option>
+                                        </select>
+                                    </div>
+                                    <label class="control-label col-md-2" for="wlw">物联网</label>
+                                    <div class="col-md-2">
+                                        <select id="wlw" name="wlw" class="form-control">
+                                            <option value="you">有</option>
+                                            <option value="wu">无</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!--分隔符-->
+                                <div class="card-diver">
+                                </div>
+                                <div class="form-group" style="margin-left: 15px">
+                                    <label class="control-label col-md-1" for="zjxs">主机型式</label>
+                                    <div class="col-md-2">
+                                        <select id="zjxs" name="zjxs" class="form-control">
+                                            <option value="tbzj">同步主机</option>
+                                            <option value="ybzj">异步主机</option>
+                                        </select>
+                                    </div>
+                                    <label class="control-label col-md-2" for="zjxh">主机型号</label>
+                                    <div class="col-md-2">
+                                        <input id="zjxh" class="form-control" type="text" name="zjxh" placeholder="主机型号">
+                                    </div>
+                                    <label class="control-label col-md-2" for="zjbh">主机编号</label>
+                                    <div class="col-md-2">
+                                        <input id="zjbh" class="form-control" type="text" name="zjbh" placeholder="主机编号">
                                     </div>
                                 </div>
                                 <div class="form-group" style="margin-left: 15px">
-                                    <label class="control-label col-md-1" for="zzdw">制造单位</label>
-                                    <div class="col-md-7">
-                                        <input id="zzdw" class="form-control" type="text" name="zzdw" placeholder="制造单位">
-                                    </div>
-                                    <label class="control-label col-md-1" for="zzrq">制造日期</label>
+                                    <label class="control-label col-md-1" for="sdjjcz">手动紧急操作装置</label>
                                     <div class="col-md-2">
-                                        <input class="form-control" id="zzrq" type="text" name="zzrq" placeholder="制造日期">
+                                        <select id="sdjjcz" name="sdjjcz" class="form-control">
+                                            <option value="you">有</option>
+                                            <option value="wu">无</option>
+                                        </select>
+                                    </div>
+                                    <label class="control-label col-md-2" for="sxcs">上行超速保护装置</label>
+                                    <div class="col-md-2">
+                                        <select id="sxcs" name="sxcs" class="form-control">
+                                            <option value="you">有</option>
+                                            <option value="wu">无</option>
+                                        </select>
+                                    </div>
+                                    <label class="control-label col-md-2" for="ucmp">意外移动保护装置</label>
+                                    <div class="col-md-2">
+                                        <select id="ucmp" name="ucmp" class="form-control">
+                                            <option value="you">有</option>
+                                            <option value="wu">无</option>
+                                        </select>
                                     </div>
                                 </div>
+                                <!--分隔符-->
+                                <div class="card-diver">
+                                </div>
                                 <div class="form-group" style="margin-left: 15px">
-                                    <label class="control-label col-md-1" for="azdw">安装单位</label>
-                                    <div class="col-md-7">
-                                        <input id="azdw" class="form-control" type="text" name="azdw" placeholder="安装单位">
-                                    </div>
-                                    <label class="control-label col-md-1" for="azrq">安装日期</label>
+                                    <label class="control-label col-md-1" for="tsfs">调速方式</label>
                                     <div class="col-md-2">
-                                        <input class="form-control" id="azrq" type="text" name="azrq" placeholder="安装日期">
+                                        <select id="tsfs" name="tsfs" class="form-control">
+                                            <option value="bp">变频</option>
+                                            <option value="ss">双速</option>
+                                        </select>
+                                    </div>
+                                    <label class="control-label col-md-2" for="kzgxh">控制柜型号</label>
+                                    <div class="col-md-2">
+                                        <input id="kzgxh" class="form-control" type="text" name="kzgxh" placeholder="主机型号">
+                                    </div>
+                                    <label class="control-label col-md-2" for="kzgbh">控制柜编号</label>
+                                    <div class="col-md-2">
+                                        <input id="kzgbh" class="form-control" type="text" name="kzgbh" placeholder="主机编号">
                                     </div>
                                 </div>
                                 <div class="form-group" style="margin-left: 15px">
@@ -255,6 +321,5 @@
     <script type="text/javascript" src="static/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="static/js/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript" src="static/js/bootstrap-datepicker.min.js"></script>
-    <script type="text/javascript" src="static/js/datepick.js"></script>
 </body>
 </html>
